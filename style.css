@@ -1,0 +1,222 @@
+ /* =============================================
+   1. CSS VARIABLES (THEME COLORS)
+   ============================================= */
+:root {
+    --primary: #1f3a93;     /* DEEP BLUE*/
+    --secondary: #27a9e1;   /*SKY BLUE*/
+    --accent: #e27a2f;      /*CTA ORANGE*/
+    --background: #f4f7f9;  /*LIGTH BACKGROUND*/ 
+    --text-dark: #1f1f1f;
+    --text-ligth: #ffffff;        
+    --cta: #e27a2f;  
+}  
+
+
+/*============== 4.HEADER ============== */
+header {
+    background-color: var(--primary);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+nav .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu li a {
+    color:  var(--text-ligth);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-menu li a:hover {
+    color: var(--accent);
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}  
+
+ body {
+    background-color: var(--background);
+    color: var(--text);
+} 
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+
+.logo {
+    height: 50px;
+}  
+
+.nav-links {
+    font-weight: 600;
+    color: #1f3a93;
+    transition: color 0.3s ease;
+}
+
+.nav-links a {
+    color: var(--primary);
+}
+
+.nav-links a:hover {
+    color: #27a9e1;
+}  
+
+/*============== HERO SECTION ============== */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/hero-bg.jpg") no-repeat center center/cover;
+    color: white;     
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.9rem;
+    margin-bottom: 50px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-weight: 900;
+    font-size: 1rem;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    color: 0.3 ease;
+}  
+
+.primary {
+    border: 2px solid var(--primary);
+    color: var(--primary);   
+    background: transparent;
+    transition: all 0.3s ease;
+}  
+
+.primary:hover {
+    background-color: #e0e0e0;  
+}
+
+.secondary {
+    border: 2px solid var(--primary);
+    color: var(--primary);   
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.secondary:hover {
+    background-color: #e0e0e0;
+}
+
+/*============= PILLARS SECTION ============== */
+.pillars {
+    background-color: var(--background);  /* ligth background for contrast*/
+    padding: 80px 20px;  /*Top & bottom spacing*/
+    text-align: center;  /*Centers heading & content*/
+}
+
+.pillars h2 {
+    font-size: 2.5rem;
+    color: var(--primary);  /*Primary color*/
+    margin-bottom: 50px;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pillars img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.pillars h2 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.pillars p {
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.pillars {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.pillars .container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pillars {
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.pillars img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.secure-connectivity {
+    background: url("images/secure-connectivity.jpg") no-repeat center center/cover;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
